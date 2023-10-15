@@ -1,0 +1,27 @@
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.logo {
+  width: 100px; 
+  height: 100px;
+}
+
+.company-name {
+  position: absolute;
+  top: 110px; 
+  left: 0;
+  width: 100px;
+  background-color: #000; 
+  color: #fff; 
+  text-align: center;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 4px;
+  display: none;
+}
+
+.logo-container.hovered .company-name {
+  display: block;
+}

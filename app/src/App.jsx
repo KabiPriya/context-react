@@ -5,6 +5,7 @@ import { useState } from "react";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
 import IndexPage from "./pages/Indexpage";
+import LogoWithHover from "./contexts/LogowithHover";
 
 function App() {
   const [name, setName] = useState("ram");
@@ -21,7 +22,14 @@ function App() {
       <NameChanger name={name} onNameChange={setName} /> */}
     </>
   );
+  return (
+    <div className="App">
+      <LogoWithHover />
+      {/* Other content of your app */}
+    </div>
+  );
 }
+
 
 function NamePrinterP(props) {
   return <p>{props.name}</p>;
