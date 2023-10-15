@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Avatar } from "@mui/material";
 
 import { ThemeDispatchContext } from "../contexts/ThemeContext";
 import { ThemeContext } from "../contexts/ThemeContext";
@@ -14,7 +15,7 @@ const Nav = () => {
   }
 
   return (
-    <nav class="container">
+    <nav className="container">
       <ul>
         <li>
           <strong>Brand</strong>
@@ -27,6 +28,11 @@ const Nav = () => {
         <li>
           <a href="#">Link</a>
         </li> */}
+        <Avatar
+          alt="Itachi"
+          src={themeContext.user.image}
+          sx={{ width: 62, height: 62 }}
+        />
         <li>
           {themeContext.value === "light" ? (
             <button onClick={() => handleClick("dark")}>🌙</button>

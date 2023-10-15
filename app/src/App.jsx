@@ -4,8 +4,7 @@ import { useState } from "react";
 
 import { ThemeProvider } from "./contexts/ThemeContext";
 
-import IndexPage from "./pages/Indexpage";
-
+import IndexPage from "./pages/IndexPage";
 
 function App() {
   const [name, setName] = useState("ram");
@@ -22,9 +21,7 @@ function App() {
       <NameChanger name={name} onNameChange={setName} /> */}
     </>
   );
-  
 }
-
 
 function NamePrinterP(props) {
   return <p>{props.name}</p>;
