@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { ThemeProvider } from "./contexts/ThemeContext";
 
-import IndexPage from "./pages/IndexPage";
+import IndexPage from "./pages/Indexpage";
 
 function App() {
   const [name, setName] = useState("ram");
